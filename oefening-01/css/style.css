@@ -1,0 +1,38 @@
+body{
+    min-height: 100vh;
+
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas: 
+      'header header header'
+      'main main aside'
+      'footer footer footer';
+    display: grid;
+}
+
+header, main, footer, aside{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #91c8ff;
+    grid-area: header;
+}
+
+main{
+    background-color: #7da9d5;
+    grid-area: main;
+}
+
+aside{
+    background-color: #007fff;
+    grid-area: aside;
+}
+
+footer{
+    background-color: #588ec3;
+    grid-area: footer;
+}
+
+
+
