@@ -1,0 +1,30 @@
+main{
+    margin: 5rem;
+    min-height: 70vh;
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column: 1fr 1fr 1fr;
+     gap: 1rem;
+}
+
+article{
+    text-align: center;
+    border-style: solid;
+}
+
+article:nth-child(even){
+    background-color: green;
+}
+
+article:nth-child(odd){
+    background-color: yellow;
+}
+
+article:nth-child(1){
+    background-color: blue;
+}
+
+article:nth-child(9){
+    background-color: red;
+}
+

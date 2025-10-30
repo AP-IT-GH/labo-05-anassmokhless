@@ -1,0 +1,67 @@
+body{
+    min-height: 100vh;
+}
+
+header, main, aside, footer{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #91c8ff;
+}
+
+main{
+    background-color: #7da9d5;
+}
+
+aside{
+    background-color: #007fff;
+}
+
+footer{
+    background-color: #588ec3;
+}
+
+nav{
+    background-color: #b3d8fd;
+    width: 250px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'header header header header header'
+    'main main main main aside'
+    'footer footer footer footer footer'
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+header{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas:
+   'header header header'
+   'header header nav'
+    'header header header';
+}
+
+nav{
+    grid-area: nav;
+    max-height: 1.5rem;
+}
+
